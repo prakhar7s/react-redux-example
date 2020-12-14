@@ -1,0 +1,35 @@
+$counter-height: 270px;
+$counter-width: 500px;
+$btn-width: 130px;
+$font-size: 35px;
+$font-color: white;
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: black;
+  height: $counter-height;
+  width: $counter-width;
+  border-radius: 15px;
+
+  button {
+    width: $btn-width;
+    padding: 10px;
+    outline: none;
+    color: $font-color;
+    font-size: $font-size;
+    border: 1px solid rgb(17, 31, 223);
+    opacity: 0.5;
+    background: linear-gradient(to top, rgb(3, 10, 44), rgb(7, 8, 10));
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  span {
+    font-size: $font-size;
+    color: white;
+  }
+}
